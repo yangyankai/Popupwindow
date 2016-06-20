@@ -48,7 +48,8 @@ public class MainActivity extends Activity implements View.OnClickListener {
         pop = new PopupWindow(view, ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT);
 
         pop.setOutsideTouchable(true);// 控制popupwindow点击屏幕其他地方消失
-        pop.setBackgroundDrawable(this.getResources().getDrawable(R.mipmap.ic_launcher));// 设置时才会点击外部消息
+//        pop.setBackgroundDrawable(this.getResources().getDrawable(R.mipmap.ic_launcher));// 设置时才会点击外部消息
+        pop.setBackgroundDrawable(getResources().getDrawable(android.R.color.white));
 
         view.setOnClickListener(new View.OnClickListener() {
             @Override
